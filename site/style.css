@@ -117,7 +117,10 @@ textarea{
     background: var(--bg);
     color: var(--white);
 }
-
+/*pics*/
+.cat{
+    width:30%
+}
 /*media stuff ughhh*/
 @media (max-width: 1100px){
     html{
@@ -127,4 +130,9 @@ textarea{
     max-width: 80vw;
     }
     
+}
+@media (max-width: 768px){
+    .cat{
+        width:50%
+    }
 }
