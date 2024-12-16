@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Fredoka;
+    src: url(fonts/Fredoka-Medium.ttf);
+  }
+:root{
+    --bg:#e8beef;
+    --text:#782c8f;
+    --white:#ededed;
+    --accent:#d892e4;
+}
+html{
+    height:100%;
+    width:100%;
+    font-size: 20px;
+}
+body:before{
+    background-attachment: scroll;
+    content: '';
+    display: block;
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    left:0;
+    top:0;
+    transform: scale(1);
+    z-index: -700;
+    background-color: var(--bg);
+}
+body{
+    font-family: "Fredoka", sans;
+    color: var(--text);
+    font-size:1rem;
+    line-height:normal;
+    font-weight:400;
+}
+body, html {
+    scrollbar-width: auto;
+    scrollbar-color: var(--accent) var(--white);
+}
+/*main*/
+#container{
+    max-width:50vw;
+    text-align:center;
+    margin:auto;
+}
+#content{
+    width:99%;
+    background-color: var(--white);
+    color:var(--text);
+    margin: 5px -25px 5px;
+    border-radius: 10px;
+    border:3px solid var(--text);
+    padding:10px 25px;
+}
+#preloader {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: var(--bg)
+      url("https://lockheartlove.netlify.app/images/oval.svg")
+      no-repeat center;
+    z-index: 9999;
+}
+/*nav*/
+#nav {
+    background-color: var(--accent);
+    width: 100%;
+    padding: 1px 50px 1px 0px;
+    margin-left:-25px;
+    margin-bottom: 10px;
+    color:var(--text);
+    font-family: "Fredoka", sans;
+    font-size: 1.25rem;
+}
+#nav ul {
+    display:flex;
+    list-style-type:none;
+    justify-content: space-evenly;
+  }
+#nav a{
+    text-decoration: none;
+}
+#nav a:hover{
+    color: var(--white);
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease
+}
+/*text*/
+a{
+    color:inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    }
+a:hover{
+    color: var(--accent);
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease
+}
+    
+p{
+    font-size: 18px;
+}
+textarea{
+    height:30px;
+    font-family: "Fredoka", sans;
+    background-color: var(--bg);
+    color:var(--text);
+    font-size:0.75rem;
+}
+::selection {
+    background: var(--bg);
+    color: var(--white);
+}
+
+/*media stuff ughhh*/
+@media (max-width: 1100px){
+    html{
+    font-size: 16px;
+    }
+    #container{
+    max-width: 80vw;
+    }
+    
+}
