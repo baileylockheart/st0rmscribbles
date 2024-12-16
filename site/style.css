@@ -41,16 +41,23 @@ body, html {
 #container{
     max-width:50vw;
     text-align:center;
-    margin:auto;
+    margin-left:auto;
+    margin-right:auto;
 }
 #content{
-    width:99%;
+    width:100%;
     background-color: var(--white);
     color:var(--text);
     margin: 5px -25px 5px;
     border-radius: 10px;
     border:3px solid var(--text);
     padding:10px 25px;
+}
+hr{
+    background-color:var(--text);
+    border:none;
+    border-radius:5px;
+    height: 3px;
 }
 #preloader {
     align-items: center;
