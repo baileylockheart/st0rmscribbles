@@ -6,7 +6,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <meta name="color-scheme" content="light only"/>
-        <meta name="theme-color" content="#bf549a">
+        <meta name="theme-color" content="#93C6E4">
             
         <!--meta tags-->
         <meta name="description" content="Nikolaos!!"/>
@@ -14,61 +14,381 @@
         <meta property="og:title" content="st0rmscribbles: niko!"/>
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Nikolaos!!"/>
-        <meta property="og:image" content="https://st0rmscribbles.netlify.app/characters/images/nikosword.png"/>
+        <meta property="og:image" content="https://raw.githubusercontent.com/baileylockheart/st0rmscribbles/refs/heads/main/general%20art/2025/Niko%204-13-2025.png"/>
         <meta property="og:image:height" content="800"/>
         <meta property="og:url" content="https://st0rmscribbles.netlify.app/characters/niko"/>
             
         <!--and the bird app bc they just have to be special-->
         <meta name="twitter:title" content="st0rmscribbles: niko!" />
-        <meta name="twitter:image" content="https://st0rmscribbles.netlify.app/characters/images/nikosword.png">
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/baileylockheart/st0rmscribbles/refs/heads/main/general%20art/2025/Niko%204-13-2025.png">
         <meta name="twitter:description" content="Nikolaos!!">
         <meta property="twitter:card" content="summary_large_image"/>
             
         <link rel="canonical" href="https://st0rmscribbles.netlify.app/characters/niko"/>
         <link rel="icon" type="image/x-icon" href="https://em-content.zobj.net/source/whatsapp/417/blue-heart_1f499.png">
-        <link rel="stylesheet" type="text/css" href="/style.css">
-        <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
         <div id="preloader"></div>
     </head>
     <style>
-        :root{
-            --bg:#5e9fcd;
-            --text:#281f17;
-            --white:#ebe5de;
-            --accent:#066945;
+        html{
+            height:100%;
+            width:100%;
+            font-size: 14px;
         }
-        .quote{
-            color: var(--white);
+        body:before{
+            background-attachment: scroll;
+            content: '';
+            display: block;
+            position: fixed;
+            width:100vw;
+            height:100vh;
+            left:0;
+            top:0;
+            transform: scale(1);
+            z-index: -700;
+            background-color: #93C6E4;
         }
-        #nav a{color: var(--white);}
-        #nav a:hover{
-            color: var(--black);
-            transition: 0.6s ease;
-            -webkit-transition: 0.6s ease
+        body{
+            color: #8B4513; /* BURNISHED COPPER */
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            font-size:1rem;
+            line-height:normal;
+            font-weight:400;
+        }
+        #preloader {
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            display: flex;
+            position: fixed;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            background: var(--bg)
+            url("https://lockheartlove.netlify.app/images/oval.svg")
+            no-repeat center;
+            z-index: 9999;
+        }
+        /* THE PARCHMENT - BEATEN THIN BUT STRONG */
+        #container{
+            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #content{
+            margin: 5px;
+        }
+        #wrapper {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 4px double #A0522D; /* TEMPERED BRONZE EDGES */
+            background-color: #F5DEB3; /* WEATHERED PARCHMENT */
+            box-shadow: 0 0 15px #5C2C03, 0 0 30px #5C2C03; /* FORGE GLOW */
+        }
+        
+        /* HEADER PLATE - HAMMERED TO PERFECTION */
+        #header {
+            text-align: center;
+            border-bottom: 2px solid #A0522D;
+            padding: 5px;
+            background-color: #CD853F; /* AGED BRASS */
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px #000000;
+            color: #5C2C03; /* FORGE DARKENED STEEL */
+        }
+        
+        #nav {
+            color: #8B4513;
+            font-weight: bold;
+            margin: 3px 0 !important;
+            background-color: #F5DEB3;
+            border-top: 1px solid #A0522D;
+            border-bottom: 1px solid #A0522D;
+            font-size: 1.25rem;
+            padding: 0;
+            width: 100%;
+        }
+        #nav ul {
+            display:flex;
+            list-style-type:none;
+            justify-content: space-evenly;
+        }
+        /* THE STURDY TABLE - LOAD-BEARING STRUCTURE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        /* THE FORGED CELLS - EACH BEARING ITS LOAD */
+        td {
+            padding: 5px;
+            vertical-align: top;
+            border: 1px solid #CD853F;
+        }
+        
+        /* LEFT COLUMN - HARD AS IRON */
+        .left-column {
+            width:35%;
+            border-right: 2px solid #A0522D;
+            background-color: rgba(222, 184, 135, 0.3);
+        }
+        
+        /* RIGHT COLUMN - FLEXIBLE AS FOLDED STEEL */
+        .right-column {
+            width: 65%;
+            background-color: rgba(245, 222, 179, 0.3);
+        }
+        
+        /* THE VIEWPORT - A WINDOW TO THE SCROLLS */
+        .scrollbox {
+            max-height: 150px;
+            overflow-y: auto;
+            padding: 0 5px;
+            border: 1px inset #CD853F;
+            background-color: rgba(245, 222, 179, 0.5);
+            scrollbar-width: thin;
+            scrollbar-color: #8B4513 #F5DEB3;
+        }
+        
+        /* WEBKIT SCROLLBAR - FOR THE CHROME FORGEMASTERS */
+        .scrollbox::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .scrollbox::-webkit-scrollbar-track {
+            background: #F5DEB3;
+            border: 1px solid #8B4513;
+        }
+        
+        .scrollbox::-webkit-scrollbar-thumb {
+            background-color: #8B4513;
+            border-radius: 0;
+            border: 1px solid #F5DEB3;
+        }
+        
+        /* THE SECTIONS - EACH A SHIELD OF INFORMATION */
+        .section {
+            text-align: left;
+            margin-bottom: 10px;
+            border: 1px solid #A0522D;
+            padding: 5px;
+            background-color: rgba(245, 222, 179, 0.7);
+            font-size: 1rem;
+        }
+        
+        /* THE SECTION TITLES - ENGRAVED WITH CARE */
+        .section-title {
+            font-weight: bold;
+            text-decoration: none;
+            color: #5C2C03;
+            margin-bottom: 5px;
+            font-size: 1.15rem;
+            border-bottom: 1px solid #A0522D;
+            padding-bottom: 3px;
+            letter-spacing: 1px;
+        }
+        .gallery{
+            height: 8rem;
+            border: 1px solid #A0522D;
+            border-radius: 10px;
+        }
+        .gallery:hover{
+            -webkit-transform:scale(2);
+            transform:scale(2);
+            transition: all .2s ease-out;
+        }
+        
+        /* THE IRON LINKS */
+        a {
+            color: #8B4513;
+            text-decoration: none;
+            font-size: auto;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            color: #A0522D;
+            text-shadow: 0 0 2px #A0522D;
+        }
+        #links {
+            border: 1px dashed #A0522D;
+            padding: 3px;
+            text-align: center;
+            margin: 0 auto 15px;
+            font-size: 1rem;
+        }
+        
+        /* EMBLEM DECORATIONS - LIKE INLAID METAL */
+        .emblem {
+            color: #A0522D;
+            font-size: larger;
+            display: inline-block;
+            margin: 0 3px;
+        }
+        
+        /* FOOTER - THE FOUNDRY MARK */
+        #footer {
+            text-align: center;
+            padding: 5px;
+            border-top: 2px solid #A0522D;
+            font-size: 1rem;
+            background-color: #CD853F;
+            color: #5C2C03;
+        }
+        #footer a{
+            font-size: 1.1rem;
+        }
+        
+        /* CHARACTER FRAME */
+        .character-frame {
+            border: 2px solid #A0522D;
+            padding: 3px;
+            background-color: rgba(205, 133, 63, 0.2);
+        }
+        #quote{
+            margin-bottom: 10px;
+            border: 1px solid #A0522D;
+            padding: 0 5px;
+            background-color: rgba(245, 222, 179, 0.7);
+            font-size: 1rem;
+            text-align: left;
+        }
+        
+        @media (max-width: 770px){
+            #header {
+                font-size: 1.25rem;
+            }
+            #nav ul {
+                margin-left: -2pc;
+            }
+            table, td{
+                display:block
+            }
+            .left-column, .right-column{
+                width:auto
+            }
+            .scrollbox {
+                max-height: 200px;
+            }
         }
     </style>
     <body>
         <div id="container">
             <div id="content">
-                <h1><a style="text-decoration: none;" href="/home.html">st0rmscribbles</a></h1>      
-                <div id="nav"><script src="/nav.js"></script></div>
-                <h2>Nikolaos!!</h2>
-                <p>~ <a href="https://scratch.mit.edu/projects/1157622845/" target="_blank">song demo</a> || <a href="https://toyhou.se/32609210.nikolaos-niko" target="_blank">toyhouse</a> || <a href="https://artfight.net/character/5806229.nikolaos-niko" target="_blank">art fight</a> ~</p>
-                <hr>
-                <p class="quote">I remember them all. I carry them with me every day, but they don't weigh me down. Feelings of grief may be heavy, but I do not blame them for that. How could I? I love them.</p>
-                <p class="desc">Nikolaos, or Niko, is an OC inspired by EPIC: The Musical! He's one of the 600 men of Odysseus's fleet! He's half water nymph, half human, although neither he nor his parents are aware of this. (Said parents are not biologically related to him, they found and took him in as a baby.)</p>
-                <p class="desc">Due to his father being very ill, he joined the war at only 10 years old. He was practically raised by his crew, seeing Odysseus and Polites in particular as father-like figures. Being 20 at the beginning of EPIC, he's grown and matured into a young man with an incredible capacity for kindness, as well as an equally incredible capacity for violence. Of the two, though, he would always choose kindness. He's undyingly loyal to his captain and crew, and is always eager to help. Despite the horrible things he'd seen at such a young age, he maintained a genuinely positive outlook and demeanor.</p>
-                <p class="desc">He was known by the crew as a source of joy and a ray of sunshine. Being favored by Apollo certainly helped with that, but he'd have earned that title regardless. As a child, he'd sing to himself for comfort, and this habit grew with him as time passed&mdash;he'd come up with many songs that most of the crew can now recognize, and they found both comfort and entertainment in his antics.</p>
-                <hr>
-                <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="120" href="https://www.pinterest.com/bailey_lockheart/ocs/nikolaos/"></a>
-                <hr>
-                <img class="gallery" src="https://raw.githubusercontent.com/baileylockheart/st0rmscribbles/refs/heads/main/general%20art/2025/Niko%204-13-2025.png">
-                <hr>
-                <p><a href="/characters/tirian.html">&larr; previous</a> <a href="/characters.html">&#9825;</a> <a href="/characters/lym.html">next &rarr;</a></p>
-            </div>
-            <footer><p style="color:var(--white)">♡&nbsp;&nbsp;<a  href="https://github.com/baileylockheart/st0rmscribbles" target="_blank">Follow the Site</a>&nbsp;&nbsp;♡</p></footer>
+                <div id="wrapper">
+        <!-- THE HEADER PLATE -->
+        <div id="header">
+            <span class="emblem">⚔</span> <a style="text-decoration: none;font-size: larger;" href="/home.html">ST0RMSCRIBBLES</a> <span class="emblem">⚔</span>
         </div>
+        
+        <!-- THE SCROLLING HERALD -->
+        <div id="nav"><script src="/nav.js"></script></div>
+        <!-- THE STURDY TABLE -->
+        <table>
+            <tr>
+                <!-- LEFT COLUMN - THE CHARACTER ESSENCE -->
+                <td class="left-column">
+                    <!-- CHARACTER INFO SECTION -->
+                    <div class="section">
+                        <div class="section-title">IDENTITY & LINEAGE</div>
+                        <div style="text-align: center; margin: 5px 0;">
+                            <img src="https://f2.toyhou.se/file/f2-toyhou-se/characters/32609210?1744601345" alt="Character Portrait" class="character-frame"/>
+                        </div>
+                        <p>
+                            <b>NAME:</b> Nikolaos (Niko)<br>
+                            <b>AGE:</b> 20 (At the beginning of EPIC)<br>
+                            <b>LINEAGE:</b> Half Human, Half Water Nymph<br>
+                            <b>ALIGNMENT:</b> Neutral Good<br>
+                        </p>
+                        <p style="text-align: center;font-size:1rem;margin-top: -10px;">
+                            ⚔⚔⚔⚔<br>
+                            Born to be a poet, forced to be a soldier.
+                        </p>
+                    </div>
+
+                    <div id="quote">
+                        <p style="font-weight:600">"I remember them all. I carry them with me every day, but they don't weigh me down. Feelings of grief may be heavy, but I do not blame them for that. How could I? I love them."
+                        </p>
+                    </div>
+                    
+                    <!-- LIKES/DISLIKES SECTION -->
+                    <div class="section">
+                        <div class="section-title">LIKES & AVERSIONS</div>
+                        <p>
+                            <span style="color: #8B4513;">❧</span> Helping Others<br>
+                            <span style="color: #8B4513;">❧</span> Creating Art<br>
+                            <span style="color: #8B4513;">❧</span> Defending Loved Ones<br>
+                            <span style="color: #8B4513;">❧</span> Learning New Things<br>
+                            <br>
+                            <span style="color: #8B0000;">✠</span> Needless Cruelty<br>
+                            <span style="color: #8B0000;">✠</span> Avoidable Deaths<br>
+                        </p>
+                    </div>
+                </td>
+                
+                <!-- RIGHT COLUMN - THE CHARACTER LORE -->
+                <td class="right-column">
+                    <!-- BIO/LORE SECTION WITH SCROLLBOX -->
+                    <div class="section">
+                        <div class="section-title">SAGA & LEGENDS</div>
+                        <div class="scrollbox">
+                            <p>Nikolaos, or Niko, is an OC inspired by EPIC: The Musical! He's one of the 600 men of Odysseus's fleet! He's half water nymph, half human, although neither he nor his parents are aware of this. (Said parents are not biologically related to him, they found and took him in as a baby.)</p>
+                            <p>Due to his father being very ill, he joined the war at only 10 years old. He was practically raised by his crew, seeing Odysseus and Polites in particular as father-like figures. Being 20 at the beginning of EPIC, he's grown and matured into a young man with an incredible capacity for kindness, as well as an equally incredible capacity for violence. Of the two, though, he would always choose kindness. He's undyingly loyal to his captain and crew, and is always eager to help. Despite the horrible things he'd seen at such a young age, he maintained a genuinely positive outlook and demeanor.</p>
+                            <p>He was known by the crew as a source of joy and a ray of sunshine. Being favored by Apollo certainly helped with that, but he'd have earned that title regardless. As a child, he'd sing to himself for comfort, and this habit grew with him as time passed—he'd come up with many songs that most of the crew can now recognize, and they found both comfort and entertainment in his antics.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- ABILITIES SECTION WITH SCROLLBOX -->
+                    <div class="section">
+                        <div class="section-title">PROWESS & TALENTS</div>
+                        <div class="scrollbox">
+                            <ul style="margin-left: -1pc;">
+                                <li><b>Music:</b> A talented singer and instinctual songwriter, Niko's voice is a common and beloved sound on the ships.</li>
+                                <li><b>Healing:</b> He's a skilled healer, often patching up his brothers after battles. He has a knack for creating remedies with whatever's on hand, and taugh himself how to care for wounds.</li>
+                                <li><b>Fighting:</b> In battle, he's frightening but not cruel - that said, he's able to painlessly incapacitate a man in more ways than he could count on both hands. When he does need to kill, he ensures it's as swift and painless as possible.</li>
+                                <ul style="margin-left: -1pc;">
+                                    <li>He's skilled with a sword and uses his often, but he's also an extremely skilled archer - he learned from Odysseus, but has since become nearly an equal.</li>
+                                </ul>
+                                <li><b>Encyclopedia:</b> Generally, he knows a lot. He reads when he gets the chance, often about monsters, gods, and remedies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- RELATIONSHIPS SECTION -->
+                    <div class="section">
+                        <div class="section-title">COMPANIONS & RIVALS</div>
+                        <div class="scrollbox">
+                            <p>
+                                <b>Odysseus:</b> His captain, the one he respects most - the closest thing he has to a father.<br>
+                                <b>Polites:</b> His comfort person, and another father figure - one who taught him true kindness.<br>
+                                <b>Elpenor:</b> Best friend since day one, and practically his brother.<br>
+                                <b>Apollo:</b> Silent supporter, watching over him.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div id="links">
+                        <a href="https://scratch.mit.edu/projects/1157622845" target="_blank">-=[ SONG DEMO ]=-</a> ||
+                        <a href="hhttps://toyhou.se/32609210.nikolaos-niko" target="_blank">-=[ TOYHOUSE ]=-</a> ||
+                        <a href="https://artfight.net/character/5806229.nikolaos-niko" target="_blank">-=[ ART FIGHT ]=-</a> ||
+                        <a href="https://www.pinterest.com/bailey_lockheart/ocs/nikolaos/" target="_blank">-=[ PINTEREST ]=-</a>
+                    </div>
+                    <img class="gallery" src="https://raw.githubusercontent.com/baileylockheart/st0rmscribbles/refs/heads/main/general%20art/2025/Niko%204-13-2025.png">
+                </td>
+            </tr>
+        </table>
+        
+        <!-- FOOTER - THE FOUNDRY MARK -->
+        <div id="footer">
+            <div>Crafted in the Year of 2025 - By the Hand of st0rmscribbles</div>
+            <div><span class="emblem">✠</span>  Template by <a href="https://ko-fi.com/s/a694627190" target="_blank">numbpilled</a> <span class="emblem">✠</span></div>
+            <div><a href="/characters/tirian.html">&larr; previous</a> <a href="/characters.html">&#9825;</a> <a href="/characters/lym.html">next &rarr;</a></div>
+        </div>
+    </div> 
+    <br>
         <script>
             var loader = document.getElementById("preloader");
             window.addEventListener("load", function () {
