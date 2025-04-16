@@ -21,6 +21,7 @@ document.getElementById("artgallery").innerHTML = `
  <div id="center">
     <hr>
     <h3>2025</h3>
+    <img class="gallery" src="https://raw.githubusercontent.com/baileylockheart/st0rmscribbles/refs/heads/main/general%20art/2025/Niko%202.0%204-15-2025.png">
     <img class="gallery" src="https://raw.githubusercontent.com/baileylockheart/st0rmscribbles/refs/heads/main/general%20art/2025/Niko%204-13-2025.png">
     <img class="gallery" src="https://raw.githubusercontent.com/baileylockheart/st0rmscribbles/refs/heads/main/general%20art/2025/strawberry%204-13-2025.png">
     <hr>
